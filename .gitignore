@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+.venv/
+.env
+.mypy_cache/
+.vscode/
+venv/
+__pycache__/
+.pycharm/
+.idea/

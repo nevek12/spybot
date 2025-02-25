@@ -1,0 +1,19 @@
+[project]
+name = "spybot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "nevek12",email = "vladnevvk@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiogram (>=3.17.0,<4.0.0)",
+    "environs (>=14.1.0,<15.0.0)",
+    "redis (>=5.2.1,<6.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
