@@ -86,7 +86,7 @@ async def process_show_role(callback: CallbackQuery, state: FSMContext):
     await state.update_data(data=data)
 
     if sorted(data['know_role_id']) == sorted(data['users_id']): # не забыть переделать в set
-        await callback.message.edit_text(text=f'Задает вопрос {data['ask']}', reply_markup=create_inline_kb(2, *data['locations']))
+        await callback.message.edit_text(text=f'Задает вопрос {data["ask"]}', reply_markup=create_inline_kb(2, *data['locations']))
         await state.set_state(FSM.playing)
         await asyncio.sleep(10)
         state_cur = await state.get_state()
